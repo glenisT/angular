@@ -1,0 +1,21 @@
+
+<div class="logo">
+    <a href="https://www.creative-tim.com" class="simple-text logo-mini">
+      <div class="logo-img">
+          <img src="https://static.vecteezy.com/system/resources/previews/000/098/110/original/internet-of-things-vector.jpg" width = "50px"height="50px"/>
+      </div>
+    </a>
+    <a href="https://en.wikipedia.org/wiki/Internet_of_things" class="simple-text logo-normal">
+        I.O.T
+    </a>
+</div>
+<div class="sidebar-wrapper">
+    <ul class="nav">
+        <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
+            <a [routerLink]="[menuItem.path]">
+                <i class="now-ui-icons {{menuItem.icon}}"></i>
+                <p>{{menuItem.title}}</p>
+            </a>
+        </li>
+    </ul>
+</div>

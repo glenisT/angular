@@ -1,0 +1,18 @@
+<body>
+<div *ngIf="hero">
+  <h2>{{hero.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{hero.id}}</div>
+  <div>
+    <label for="hero-name">Hero name: </label>
+    <input id="hero-name" [(ngModel)]="hero.name" placeholder="name">
+    <br>
+    <span>Attack: {{hero.attack}}</span> 
+    <br>
+    <span>Defense: {{hero.defense}}</span>
+    <br>
+    <span>Weaknesses: {{hero.weaknesses}}</span>
+    <br>
+    <span>Last seen: <img src={{hero.image}} alt="" width="250px" height="325px"> </span>
+  </div>
+</div>
+</body>
